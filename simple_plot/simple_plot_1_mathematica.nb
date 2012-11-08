@@ -1,0 +1,289 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8478,        280]
+NotebookOptionsPosition[      8058,        262]
+NotebookOutlinePosition[      8416,        278]
+CellTagsIndexPosition[      8373,        275]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   StyleBox[
+    StyleBox[
+     RowBox[{
+     "NAME", " ", ":", 
+      "                                                          ", 
+      RowBox[{"simple_plot", " ", "_", " ", "1", " ", "_mathematica"}]}], 
+     "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+      RowBox[{
+      "DESCRIPTION", " ", ":", "                                      ", 
+       RowBox[{"Plots", " ", "a", " ", "function", " ", "y"}]}], " ", "=", 
+      " ", 
+      RowBox[{"f", " ", 
+       RowBox[{"(", "x", ")"}], " ", "with", " ", "a", " ", "given", " ", 
+       RowBox[{"formula", ".", "\n", "\n", "EXECUTION"}], " ", 
+       RowBox[{
+       "COMMAND", " ", ":", "\n", 
+        "                                                                     \
+         ", 
+        RowBox[{"evaluate", " ", "cell", " ", "below"}]}]}]}], "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+     "INPUTS", " ", ":", 
+      "                                                   ", 
+      RowBox[{"x", " ", ":", " ", 
+       RowBox[{"dataset", " ", "X"}]}]}], "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    "                                                                         \
+  ",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{"y", " ", ":", " ", 
+      RowBox[{"dataset", " ", "Y"}]}], "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+     "OUTPUTS", " ", ":", "                                              ", 
+      RowBox[{"plot", " ", "inside", " ", "the", " ", "notebook"}]}], 
+     "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+     "NOTES", " ", ":", 
+      "                                                    ", 
+      RowBox[{"change", " ", "the", " ", "input", " ", "data"}]}], 
+     "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[" ",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+     "AUTHOR", " ", ":", "                                                ", 
+      RowBox[{"Leonardo", " ", "UBEDA"}]}], "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[" ",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    "                                                                         \
+ ",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+      RowBox[{"Space", " ", "Telescope", " ", "Science", " ", "Institute"}], 
+      ",", " ", "USA"}], "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox["\n", "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox[
+    StyleBox[
+     RowBox[{
+      RowBox[{"REVISION", " ", 
+       RowBox[{
+       "HISTORY", " ", ":", "\n", 
+        "                                                                     \
+       ", 
+        RowBox[{"Written", " ", "by", " ", "Leonardo", " ", "UBEDA"}]}]}], 
+      ",", " ", 
+      RowBox[{"Oct", " ", "2012."}]}], "Subsubtitle",
+     FontWeight->"Plain"],
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontWeight->"Plain"], "\n", 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16], 
+   StyleBox["\n",
+    FontFamily->"Helvetica",
+    FontSize->16,
+    FontWeight->"Plain"]}]}]], "Input",
+ CellChangeTimes->{{3.5584516570923567`*^9, 3.5584516887793827`*^9}, {
+  3.5584517616681147`*^9, 3.558451763209228*^9}, {3.558451892629335*^9, 
+  3.55845190192727*^9}, {3.558452700649529*^9, 3.5584527012666483`*^9}}],
+
+Cell[TextData[StyleBox["# ------------------------ mathematica code begins \
+here",
+ FontFamily->"Courier",
+ FontSize->18]], "Text",
+ CellChangeTimes->{3.5584530953763847`*^9}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Plot", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Sin", "[", "x", "]"}], "*", 
+     RowBox[{"Exp", "[", 
+      RowBox[{
+       RowBox[{"-", "x"}], "/", "30"}], "]"}]}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", " ", "0", ",", " ", "120."}], "}"}], ",", " ", 
+    "\[IndentingNewLine]", 
+    RowBox[{"PlotRange", " ", "->", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "1.0"}], ",", " ", "1.5"}], "}"}]}], ",", "  ", 
+    "\[IndentingNewLine]", 
+    RowBox[{"PlotStyle", " ", "->", " ", "Red"}], ",", " ", 
+    "\[IndentingNewLine]", 
+    RowBox[{"AxesOrigin", " ", "->", " ", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", " ", 
+       RowBox[{"-", "1"}]}], "}"}]}], " ", ",", " ", "\[IndentingNewLine]", 
+    RowBox[{"Axes", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"AxesLabel", " ", "->", " ", 
+     RowBox[{"{", 
+      RowBox[{"\"\<x title\>\"", ",", " ", "\"\<y title\>\""}], "}"}]}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"LabelStyle", "\[Rule]", 
+     RowBox[{"Directive", "[", 
+      RowBox[{"Black", ",", "20"}], "]"}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{"TicksStyle", "\[Rule]", 
+     RowBox[{"Directive", "[", 
+      RowBox[{"Black", ",", "20"}], "]"}]}]}], "]"}],
+  FontSize->18,
+  FontWeight->"Plain"]], "Input",
+ CellChangeTimes->{
+  3.5584516156087427`*^9, {3.55845171806877*^9, 3.5584517395650597`*^9}, {
+   3.558451816097184*^9, 3.5584518236255417`*^9}, 3.558451855362924*^9, {
+   3.558451963452229*^9, 3.558452013294684*^9}, {3.558452076623685*^9, 
+   3.558452076957623*^9}, {3.558452178518156*^9, 3.5584522000277557`*^9}, {
+   3.5584523295293427`*^9, 3.5584523568583*^9}, {3.558452708695442*^9, 
+   3.558452725482915*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.558453172193532*^9, 3.558453172216599*^9}}],
+
+Cell[TextData[StyleBox["# ------------------------ mathematica code ends here",
+ FontFamily->"Courier",
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.558453146922943*^9, 3.558453159177457*^9}}]
+},
+WindowSize->{984, 983},
+WindowMargins->{{Automatic, 545}, {Automatic, 113}},
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 6, \
+2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 5286, 182, 436, "Input"],
+Cell[5846, 204, 176, 4, 32, "Text"],
+Cell[6025, 210, 1737, 42, 195, "Input"],
+Cell[7765, 254, 92, 1, 27, InheritFromParent],
+Cell[7860, 257, 194, 3, 32, "Text"]
+}
+]
+*)
+
+(* End of internal cache information *)
