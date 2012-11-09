@@ -36,9 +36,10 @@ import pyfits as pf
 import matplotlib.pyplot as plt
 
 # read datacube
-f = pf.open(wd+'ngc4151_hband.fits')
+f = pf.open('ngc4151_hband.fits')
 cube = f[1].data
 header = f[1].header
+f.close()
 
 # we plot slice 1067
 cube_slice = 1067
