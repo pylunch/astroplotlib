@@ -58,6 +58,6 @@ Example
 
     fig, ax = plt.subplots()
 
-    ax.plt(x_data, y_data)
+    ax.plot(x_data, y_data)
 
     fig.savefig('plot.pdf')
