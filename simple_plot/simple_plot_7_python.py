@@ -1,6 +1,14 @@
 #! /usr/bin/env python
 
+'''
+This is script to create simple plot #7 on the astroplotlib website.
+
+Alex Viana, STScI
+viana@stsci.edu
+'''
+
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 
 flux_cigale = np.genfromtxt('cigale_fit.txt', comments=';', 
@@ -14,8 +22,10 @@ flux_rr = np.genfromtxt('rr_fit.txt', comments=';',
 flux_data = np.genfromtxt('observed_fluxes.txt', comments=';', 
 			names = ['lambda_data', 'flux_data', 'flux_error_data'])
 
-# Create the figure and axes instances
-fig, ax1 = plt.subplots(figsize=(4.7, 6.3))
+# Create the figure and axes instances.
+# Adjust the plot to the right so the y axes label fits.
+fig, ax1 = plt.subplots(figsize = (4.7, 6.3))
+plt.subplots_adjust(left = 0.25, right = 0.99)
 
 # Plot the CIGALE line with a specially defined line style.
 ax1.plot(flux_cigale['lambda_cigale'], flux_cigale['flux_cigale'],'r', 
@@ -46,3 +56,11 @@ leg = ax1.legend(fancybox=True, loc = 'upper left')
 leg.draw_frame(False)
 ax1.set_xlabel('Wavelength [$\mu$m]')
 ax1.set_ylabel('Flux desnisty [mJy]')
+
+# Turn off scientific notation on the axes.
+y_formatter = matplotlib.ticker.ScalarFormatter(useOffset=False)
+ax1.yaxis.set_major_formatter(y_formatter)
+ax1.xaxis.set_major_formatter(y_formatter)
+
+# Save the figure as a pdf.
+fig.savefig('simple_plot_7.pdf', papertype='letter')
