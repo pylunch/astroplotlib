@@ -41,8 +41,8 @@ lamb = crval3 + (pixel - crpix3) * cdelt3
 flux = cube[100:1900, 30, 30]
 lambda_microns = lamb[100:1900] / 1.e4
 
-# Setup plot
-fig, ax = plt.subplots(figsize = (17,7))
+# Setup plot, figure size in inches
+fig, ax = plt.subplots(figsize = (6.7, 2.75))
 
 # Define axes
 ax.set_xlabel('wavelength ('+'$\mu$'+'m)')
