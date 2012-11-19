@@ -9,8 +9,9 @@ Display the spectrum of one pixel of a datacube
 
 :Organization: Space Telescope Science Intitute
 
-Execution
----------
+Example
+-------
+
 >>> python datacubes_2_python.py
 """
 

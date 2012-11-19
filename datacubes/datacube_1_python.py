@@ -9,8 +9,8 @@ Displays a contour plot of a datacube slice
 
 :Organization: Space Telescope Science Institute
 
-Execution
----------
+Example
+-------
 
 >>> python datacubes_1_python
 """
