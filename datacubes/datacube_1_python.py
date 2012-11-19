@@ -2,34 +2,19 @@
 
 # Header
 
-__author__ = 'D. Hammer, T.S. Le Blanc'
-__version__ = 0.1
+"""
+Displays a contour plot of a datacube slice
 
-'''
-NAME:
-	datacubes_1_python
+:Authors: Derek Hammer, Tommy Le Blanc
 
-ABOUT:
-	Displays a contour plot on a datacube slice
+:Organization: Space Telescope Science Institute
 
-EXECUTE:
-	>>> datacubes_1_python.py
+Execution
+---------
 
-INPUTS:
-	FITS datacube ngg4151_hband.FITS
+>>> python datacubes_1_python
+"""
 
-OUTPUTS:	
-	PDF file: plot.pdf
-
-NOTES:
-	None.
-
-AUTHOR:
-	Derek Hammer and Tommy Le Blanc for STScI, Nov. 2012
-
-VERSION HISTORY:
-	0.1 - Initial version of datacube_1.py
-'''
 
 # Import necessary modules
 import pyfits as pf
