@@ -43,7 +43,7 @@ ax.set_xlim(0, 12)
 ax.set_ylim(0, 12)
 
 # Plot data
-ax.plot(x, y, 'rs')
+ax.plot(x, y, marker='s', mec='r', mfc='r', ls='none', alpha=0.7)
 ax.plot(x_fit, y_fit, 'b--')
 
 # Save figure
