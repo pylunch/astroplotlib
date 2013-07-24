@@ -19,8 +19,7 @@
                       Space Telescope Science Institute, USA 
  
  REVISION HISTORY:
-                      Written by Tommy LE BLANC, DEC 2013. 
-
+                      Written by Tommy LE BLANC, JUL 2013. 
 '''
 
 # Import necessary modules
